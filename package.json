@@ -1,0 +1,13 @@
+{
+  "name": "conty-origem-cadastro",
+  "version": "0.1.0",
+  "description": "Contrato de atribuição de origem do cadastro (link → primeira abertura → cadastro).",
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "start": "node src/server.ts",
+    "example": "node examples/two-links.ts"
+  },
+  "license": "UNLICENSED"
+}

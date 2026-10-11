@@ -1,0 +1,111 @@
+{
+  "request": {
+    "userId": "creator-123",
+    "attribution": {
+      "installId": "inst-7f3a",
+      "firstOpenAt": "2026-10-01T12:00:00.000Z",
+      "clientSentAt": "2026-10-10T19:00:00.000Z",
+      "touches": [
+        {
+          "url": "https://conty.app/a?ct_v=1&ct_type=referral&ct_ref=MARIA42&ct_channel=whatsapp&ct_click=r-01HZX9",
+          "capturedAt": "2026-10-01T12:00:00.000Z"
+        },
+        {
+          "url": "https://conty.app/a?ct_v=1&ct_type=campaign&ct_campaign=verao-2026&ct_channel=instagram&ct_click=c-01HZY2",
+          "capturedAt": "2026-10-02T18:00:00.000Z"
+        },
+        {
+          "url": "https://conty.app/a?ct_v=1&ct_type=campaign",
+          "capturedAt": "2026-10-04T18:00:00.000Z"
+        },
+        {
+          "url": "https://conty.app/a?ct_v=1&ct_type=campaign&ct_campaign=black-friday&ct_click=c-01J0A1",
+          "capturedAt": "2026-10-10T18:00:00.000Z"
+        }
+      ]
+    }
+  },
+  "response": {
+    "userId": "creator-123",
+    "attribution": {
+      "signupAt": "2026-10-10T19:00:00.000Z",
+      "rule": "último toque válido vence (last-touch). Válido = capturado entre a primeira abertura e primeira abertura + janela, e não depois do cadastro. Empate de horário: indicação vence campanha; persistindo o empate, vence a menor chave do toque (ordem lexicográfica).",
+      "installId": "inst-7f3a",
+      "origin": {
+        "kind": "campaign",
+        "campaign": "verao-2026",
+        "channel": "instagram"
+      },
+      "organicReason": null,
+      "reason": "Origem campanha verao-2026 pelo toque #1: Toque válido mais recente entre 2 válidos.",
+      "window": {
+        "start": "2026-10-01T12:00:00.000Z",
+        "end": "2026-10-08T12:00:00.000Z",
+        "durationMs": 604800000
+      },
+      "clockOffsetMs": 0,
+      "winner": {
+        "index": 1,
+        "key": "click:c-01HZY2"
+      },
+      "touches": [
+        {
+          "index": 0,
+          "url": "https://conty.app/a?ct_v=1&ct_type=referral&ct_ref=MARIA42&ct_channel=whatsapp&ct_click=r-01HZX9",
+          "key": "click:r-01HZX9",
+          "type": "referral",
+          "campaign": null,
+          "referrer": "MARIA42",
+          "channel": "whatsapp",
+          "clickId": "r-01HZX9",
+          "capturedAtClient": "2026-10-01T12:00:00.000Z",
+          "capturedAt": "2026-10-01T12:00:00.000Z",
+          "status": "lost_to_newer",
+          "reason": "Válido, mas há toque válido mais recente (#1, 2026-10-02T18:00:00.000Z)."
+        },
+        {
+          "index": 1,
+          "url": "https://conty.app/a?ct_v=1&ct_type=campaign&ct_campaign=verao-2026&ct_channel=instagram&ct_click=c-01HZY2",
+          "key": "click:c-01HZY2",
+          "type": "campaign",
+          "campaign": "verao-2026",
+          "referrer": null,
+          "channel": "instagram",
+          "clickId": "c-01HZY2",
+          "capturedAtClient": "2026-10-02T18:00:00.000Z",
+          "capturedAt": "2026-10-02T18:00:00.000Z",
+          "status": "won",
+          "reason": "Toque válido mais recente entre 2 válidos."
+        },
+        {
+          "index": 2,
+          "url": "https://conty.app/a?ct_v=1&ct_type=campaign",
+          "key": null,
+          "type": null,
+          "campaign": null,
+          "referrer": null,
+          "channel": null,
+          "clickId": null,
+          "capturedAtClient": "2026-10-04T18:00:00.000Z",
+          "capturedAt": "2026-10-04T18:00:00.000Z",
+          "status": "invalid",
+          "reason": "Link inválido: ct_campaign obrigatório para ct_type=campaign."
+        },
+        {
+          "index": 3,
+          "url": "https://conty.app/a?ct_v=1&ct_type=campaign&ct_campaign=black-friday&ct_click=c-01J0A1",
+          "key": "click:c-01J0A1",
+          "type": "campaign",
+          "campaign": "black-friday",
+          "referrer": null,
+          "channel": null,
+          "clickId": "c-01J0A1",
+          "capturedAtClient": "2026-10-10T18:00:00.000Z",
+          "capturedAt": "2026-10-10T18:00:00.000Z",
+          "status": "outside_window",
+          "reason": "Capturado em 2026-10-10T18:00:00.000Z, após o fim da janela (2026-10-08T12:00:00.000Z)."
+        }
+      ]
+    }
+  }
+}
